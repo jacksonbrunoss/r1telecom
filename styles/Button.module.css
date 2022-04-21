@@ -1,0 +1,13 @@
+.Button {
+  position: relative;
+  display: block;
+  padding: 15px 35px;
+  background: var(--gradient);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Button{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}

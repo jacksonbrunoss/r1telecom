@@ -1,4 +1,8 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import Button from './Button';
 import 'boxicons'
+
 
 import styled from '../styles/Navbar.module.css';
 
@@ -26,8 +30,29 @@ export default function Navbar() {
         </div>
       </div>
       <nav className={styled.NavLinks}>
-        <div>logo</div>
-        <div>menu</div>
+        <div>
+          <Image src="/brand.svg" width="75" height="75" />
+        </div>
+        <div className={styled.NavLinksMenu}>
+          <ul>
+            <li>
+              <Link href="/"><a>Home</a></Link>
+            </li>
+            <li>
+              <Link href="/"><a>Quem Somos</a></Link>
+            </li>
+            <li>
+              <Link href="/"><a>Planos</a></Link>
+            </li>
+            <li>
+              <Link href="/"><a>Novidades</a></Link>
+            </li>
+            <li>
+              <Link href="/"><a>Contato</a></Link>
+            </li>
+          </ul>
+          <Button go="/404" info="2° via boleto" />
+        </div>
       </nav>
     </header>
   )
