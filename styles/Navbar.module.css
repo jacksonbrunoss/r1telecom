@@ -1,0 +1,55 @@
+
+/* NavBar Estilos */
+
+.Navbar {
+  width: 100%;
+}
+
+/* NavBarInfo */
+
+.NavbarInfo {
+  width: 100%;
+  background: var(--gradient);
+}
+.ContentNavbarInfo {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 8px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.SocialLinksInfo {
+  width: auto;
+}
+.SocialLinksInfo ul {
+  display: flex;
+}
+.SocialLinksInfo li {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 0px 0px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.SocialLinksInfo span{
+  padding-left: 5px;
+}
+.LocationInfo {
+  width: auto;
+}
+.LocationInfo {
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+/* NavLinks */
+.NavLinks {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
