@@ -53,9 +53,19 @@ table {
 	/*
 		colors
 	*/
-	--gradient: linear-gradient(89.97deg, #130CB7 -3.16%, #70F570 132.05%);
+	--gradient: linear-gradient(99.97deg, #130CB7 -3.16%, #70F570 132.05%);
+	--main-color: #130CB7;
+	--secundary-color: #70F570;
+	--text-color: #151517;
+	--text-color-l: #ffffff;
+	/*
+		spaces
+	*/
+	
 }
 
 body {
 	font-family: var(--font-main);
+	color: var(--text-color);
+	box-sizing: border-box;
 }

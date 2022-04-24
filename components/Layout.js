@@ -7,7 +7,7 @@ export default function Layout({children}) {
   return (
     <>
       <Head>
-        <link rel="shotcut icon" href="../public/favicon.ico" />
+      <link rel="icon" type="imagem/png" href="/favicon.ico" />
         <title>R1 Telecom | Entregando Qualidade.</title>
       </Head>
       <Navbar />
