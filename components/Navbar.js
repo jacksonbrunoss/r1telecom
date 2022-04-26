@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
-import 'boxicons'
+//import 'boxicons'
 
 
 import styled from '../styles/Navbar.module.css';
@@ -39,7 +39,7 @@ export default function Navbar() {
               <Link href="/"><a>Home</a></Link>
             </li>
             <li>
-              <Link href="/"><a>Quem Somos</a></Link>
+              <Link href="/about"><a>Quem Somos</a></Link>
             </li>
             <li>
               <Link href="/"><a>Planos</a></Link>

@@ -1,0 +1,138 @@
+.AboutPage {
+  width: 100%;
+}
+.BannerAboutImage {
+  width: 100%;
+  height: auto;
+  padding: 64px 0px;
+  background-image: url("../public/bgabout.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.BannerAbout {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.BannerAboutBox h3 {
+  color: var(--text-color-l);
+  font-size: 1.8rem;
+  font-weight: 800;
+  max-width: 380px;
+  margin-bottom: 16px;
+}
+.BannerAboutBox p {
+  color: var(--text-color-l);
+  max-width: 320px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+.AboutInfo {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 64px 10px;
+}
+.AboutInfo h4 {
+  position: relative;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.AboutInfo p {
+  color: var(--text-color);
+  max-width: 820px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 32px;
+  font-size: 1.2rem;
+}
+.AboutDesc {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 16px 10px 64px 10px;
+  display: flex;
+}
+
+.AboutDescBox {
+  margin: 0px 10px;
+  padding: 32px 15px;
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+.AboutDescBox h4 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-align: center;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.AboutDescBox p {
+  color: var(--text-color);
+  max-width: 820px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 32px;
+  font-size: 1.1rem;
+}
+.AboutPlanos {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0px 10px 32px 10px;
+}
+.AboutPlanosBox h4 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.AboutPlanosBox p {
+  max-width: 320px;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .BannerAbout {
+    flex-direction: column;
+  }
+  .BannerAboutBox h3 {
+    text-align: center;
+    padding-bottom: 16px;
+    margin: 0 auto;
+  }
+  .BannerAboutBox p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .BannerImageBox, .ImgPlanos {
+    display: none;
+  }
+  .AboutDesc {
+    flex-direction: column;
+  }
+  .AboutDescBox {
+    margin: 16px 10px 0px 10px;
+  }
+  .AboutPlanos {
+    flex-direction: column;
+    text-align: center;
+  }
+  .AboutPlanos p  {
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+}
