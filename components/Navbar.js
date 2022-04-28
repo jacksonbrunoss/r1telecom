@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
@@ -7,6 +8,17 @@ import Button from './Button';
 import styled from '../styles/Navbar.module.css';
 
 export default function Navbar() {
+
+  const [toggle, setToggle] = useState(false);
+
+  const handleMenuToggle = () => {
+    setToggle(!toggle)
+    if(toggle == true) {
+      console.log("Menu Ativado");
+    } else {
+      console.log("Menu Desativado");
+    }
+  }
   return (
     <header className={styled.Navbar}>
       <div className={styled.NavbarInfo}>
@@ -32,6 +44,20 @@ export default function Navbar() {
       <nav className={styled.NavLinks}>
         <div>
           <Image src="/brand.svg" width="75" height="75" />
+        </div>
+        <div 
+        className={styled.MenuTogge} 
+        onClick={handleMenuToggle}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div 
+        onClick={handleMenuToggle}
+        className={(toggle ? styled.prev : styled.BoxToggle)}>
+          <p>jhjhjhj</p>
+          <button onClick={handleMenuToggle}></button>
         </div>
         <div className={styled.NavLinksMenu}>
           <ul>

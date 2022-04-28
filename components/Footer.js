@@ -10,7 +10,9 @@ export default function Footer() {
         <div className={styled.CaseFooter}>
           <div className={styled.Box}>
             <article className={styled.MiniAbout}>
-              <Image src="/brand.svg" width="100" height="100" alt="Logo" />
+              <div className={styled.ImgMiniAbout}>
+                <Image src="/brand.svg" width="100" height="100" alt="Logo" />
+              </div>
               <p>
               A R1 Telecom conecta você a um mundo de possibilidades, oferecendo o melhor serviço de internet. Estude, trabalhe, assista, jogue, encontre a sua diversão e se aproxxime muito mais dos seus sonhos. A  R1 Telecom te leva além!
               </p>
@@ -30,7 +32,9 @@ export default function Footer() {
           <div className={styled.Box}>
             <article className={styled.Anatel}>
               <h3>Autorizado por:</h3>
-              <Image src="/box.svg" width="110" height="110" alt="Logo" />
+              <div className={styled.ImgAnatel}>
+                <Image src="/box.svg" width="110" height="110" alt="Logo" />
+              </div>
             </article>
           </div>
         </div>

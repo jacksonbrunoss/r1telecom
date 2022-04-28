@@ -1,6 +1,5 @@
 .Footer {
   width: 100%;
-  border-top: solid 2px #555;
   padding-top: 32px;
 }
 .ContentFooter {
@@ -27,11 +26,11 @@
   color: var(--text-color);
   font-size: 1.50rem;
   font-weight: 700;
-  margin-bottom: 32px;
 }
 .MiniContato p {
-  max-width: 300px;
+  max-width: 340px;
   line-height: 28px;
+  margin-top: 32px;
   margin-bottom: 16px;
 }
 .MiniContato h4 {
@@ -66,4 +65,41 @@
   color: var(--text-color-l);
   margin-top: 32px;
   padding: 30px 0px;
+}
+
+@media (max-width: 768px) {
+  .CaseFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .MiniAbout p,
+  .MiniContato p,
+  .MiniContato h4,
+  .MiniContato h3
+  {
+    text-align: center;
+  }
+  .MiniAbout p {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .MiniContato p {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .MiniContato ul {
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  .MiniContato ul li {
+    margin: 0px 7.5px;
+  }
+  .ImgAnatel {
+    text-align: center;
+    display: block;
+  }
+  .ImgMiniAbout {
+    text-align: center;
+    display: block;
+  }
 }
