@@ -54,10 +54,34 @@ export default function Navbar() {
           <div></div>
         </div>
         <div 
-        onClick={handleMenuToggle}
-        className={(toggle ? styled.prev : styled.BoxToggle)}>
-          <p>jhjhjhj</p>
-          <button onClick={handleMenuToggle}></button>
+        className={(toggle ? styled.BoxToggle : styled.prev)}>
+          <ul>
+            <li onClick={handleMenuToggle}>
+              <Link  href="/"><a>Home</a></Link>
+            </li>
+            <li onClick={handleMenuToggle}>
+              <Link  href="/about"><a>Quem Somos</a></Link>
+            </li>
+            <li onClick={handleMenuToggle}>
+              <Link  href="/roof"><a>Cobertura</a></Link>
+            </li>
+            <li onClick={handleMenuToggle}>
+              <Link  href="/plan"><a>Planos</a></Link>
+            </li>
+            <li onClick={handleMenuToggle}>
+              <Link  href="/news"><a>Novidades</a></Link>
+            </li>
+            <li onClick={handleMenuToggle}>
+              <Link  href="/contact"><a>Contato</a></Link>
+            </li>
+          </ul>
+          <div className={styled.ButtonToggle}>
+            <Button 
+              color="#ffffff" 
+              go="/404" 
+              info="2° via boleto" 
+            /> 
+          </div>
         </div>
         <div className={styled.NavLinksMenu}>
           <ul>
@@ -68,13 +92,16 @@ export default function Navbar() {
               <Link href="/about"><a>Quem Somos</a></Link>
             </li>
             <li>
-              <Link href="/"><a>Planos</a></Link>
+              <Link href="/roof"><a>Cobertura</a></Link>
             </li>
             <li>
-              <Link href="/"><a>Novidades</a></Link>
+              <Link href="/plan"><a>Planos</a></Link>
             </li>
             <li>
-              <Link href="/"><a>Contato</a></Link>
+              <Link href="/news"><a>Novidades</a></Link>
+            </li>
+            <li>
+              <Link href="/contact"><a>Contato</a></Link>
             </li>
           </ul>
           <Button go="/404" info="2° via boleto" />
