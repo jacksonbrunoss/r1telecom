@@ -1,9 +1,12 @@
-import styles from '../styles/Home.module.css'
+import styled from '../styles/Home.module.css'
+
+import Hero from '../components/Hero';
 
 export default function Home() {
   return (
-    <div>
-      Sou o conteudo da pagina
-    </div>
+    <>
+      <Hero />
+      <div className={styled.Line}></div>
+    </>
   )
 }

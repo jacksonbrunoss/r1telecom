@@ -1,7 +1,7 @@
 import styled from "../styles/Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
-//import 'boxicons'
+import 'boxicons'
 
 export default function Footer() {
   return (

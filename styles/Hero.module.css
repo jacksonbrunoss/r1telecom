@@ -1,0 +1,39 @@
+.HeroWrapper {
+  width: 100%;
+}
+.HeroContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+}
+.HeroInfo h1 {
+  font-size: 3.3rem;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 620px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.HeroInfo p {
+  font-size: 1rem;
+  color: var(--text-color);
+  max-width: 520px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .HeroContainer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .ImgHero {
+    display: none;
+  }
+}
