@@ -1,0 +1,99 @@
+.PlanWrapper {
+  width: 100%;
+}
+.PlanContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 64px 16px 64px 16px;
+}
+.PlanTitle {
+  width: 100%;
+  text-align: center;
+}
+.PlanTitle h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.PlanTitle p {
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-size: 1.0rem;
+  padding-top: 8px;
+  font-weight: 300;
+}
+.PlanContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 64px 0px 32px 0px;
+}
+.PlanCard {
+  width: 280px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+.PlanCardTitle {
+  width: 100%;
+  background: var(--gradient);
+}
+.PlanCardTitle h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--text-color-l);
+  font-weight: 600;
+  padding: 16px 0px;
+  text-transform: uppercase;
+}
+.PlanCardContent {
+  width: 100%;
+}
+.PlanCardContent ul li {
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-align: center;
+  margin: 16px 0px;
+}
+.PlanCardContent p {
+  color: var(--text-color);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 32px 0px 32px 0px;
+}
+.PlanCardAction {
+  position: relative;
+  display: block;
+  bottom: -20px;
+  text-align: center;
+}
+.PlanActions {
+  width: 100%;
+  padding: 32px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.PlanActions a {
+  margin: 0px 10px;
+}
+
+@media (max-width: 768px) {
+  .PlanContent {
+    flex-direction: column;
+  }
+  .PlanCard {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .PlanActions {
+    flex-direction: column;
+    text-align: center;
+  }
+  .PlanActions a {
+    margin: 0px 0px 16px 0px;
+  }
+}
