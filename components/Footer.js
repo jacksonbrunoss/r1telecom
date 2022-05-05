@@ -14,7 +14,7 @@ export default function Footer() {
                 <Image src="/brand.svg" width="100" height="100" alt="Logo" />
               </div>
               <p>
-              A R1 Telecom conecta você a um mundo de possibilidades, oferecendo o melhor serviço de internet. Estude, trabalhe, assista, jogue, encontre a sua diversão e se aproxxime muito mais dos seus sonhos. A  R1 Telecom te leva além!
+              A R1 Telecom conecta você a um mundo de possibilidades, oferecendo o melhor serviço de internet. Estude, trabalhe, assista, jogue, encontre a sua diversão e se aproxime muito mais dos seus sonhos. A  R1 Telecom te leva além!
               </p>
             </article>
           </div>

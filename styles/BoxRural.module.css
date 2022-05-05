@@ -1,0 +1,55 @@
+.BoxRuralwrapper {
+  width: 100%;
+  background-image: url('../public/bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.BoxRuralContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 64px 16px 64px 16px;
+}
+.BoxRuralTitle {
+  width: 100%;
+  padding-bottom: 32px;
+}
+.BoxRuralTitle h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-color-l);
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto;
+}
+.BoxRuralContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.BoxRuralContentBoxes {
+  width: 100%;
+  display: flex;
+  
+}
+.BoxRuralBox {
+  width: 23%;
+  background: var(--text-color-l);
+  margin: 0px 8px 0px 8px;
+  text-align: center;
+  padding: 16px 5px;
+  border-radius: 5px;
+}
+.BoxRuralBox span {
+  display: block;
+  padding: 16px 0px 16px 0px;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.BoxRuralBox p {
+  padding: 0px 8px 16px 8px;
+  line-height: 24px;
+}
