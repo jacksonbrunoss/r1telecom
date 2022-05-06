@@ -53,8 +53,8 @@ table {
 	/*
 		colors
 	*/
-	--gradient: linear-gradient(99.97deg, #130CB7 -3.16%, #70F570 132.05%);
-	--main-color: #130CB7;
+	--gradient: linear-gradient(99.97deg, #0151A8 -3.16%, #70F570 132.05%);
+	--main-color: #0151A8;
 	--secundary-color: #70F570;
 	--text-color: #151517;
 	--text-color-l: #ffffff;

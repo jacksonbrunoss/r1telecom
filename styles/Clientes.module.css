@@ -1,0 +1,75 @@
+.ClientesWrapper {
+  width: 100%;
+  background-image: url('../public/bg-client.jpg');
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+}
+.ClientesContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 64px 16px 64px 16px;
+}
+.ClientesTitle {
+  width: 100%;
+  padding-bottom: 32px;
+  text-align: center;
+}
+.ClientesTitle h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-color-l);
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto;
+}
+.ClientesTitle p {
+  text-transform: uppercase;
+  color: var(--text-color-l);
+  font-size: 1.0rem;
+  padding-top: 8px;
+  font-weight: 300;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.ClientesContent {
+  width: 100%;
+  padding: 64px 0px 32px 0px;
+  display: flex;
+  gap: 20px;
+}
+.ClientesCard {
+  background-color: var(--text-color-l);
+  border-radius: 5px;
+  padding: 0px 32px 64px 32px;
+}
+.ClientesCardAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: var(--gradient);
+  padding: 5px;
+  top: -50px;
+  margin: 0 auto;
+  position: relative;
+}
+.ClientesCardName p {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ClientesCardIcon {
+  width: 100%;
+  padding: 16px 0px;
+  text-align: center;
+}
+.ClientesCardComent p {
+  line-height: 24px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .ClientesContent {
+    flex-direction: column;
+  }
+}

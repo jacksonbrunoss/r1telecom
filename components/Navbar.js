@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
-//import 'boxicons'
+import { BsFillTelephoneFill, BsInstagram } from "react-icons/bs";
 
 
 import styled from '../styles/Navbar.module.css';
@@ -26,10 +26,10 @@ export default function Navbar() {
           <div className={styled.SocialLinksInfo}>
             <ul>
               <li>
-                <box-icon color="#fff" type='logo' name='whatsapp'></box-icon><span>86 99999-9999</span>
+              <BsFillTelephoneFill /><span>86 99999-9999</span>
               </li>
               <li>
-                <box-icon color="#fff" className="pin" type='logo' name='instagram'></box-icon><span>@r1telecom</span>
+                <BsInstagram /><span>@r1telecom</span>
               </li>
               <li>
                 <box-icon color="#fff" name='envelope'></box-icon><span>r1telecom@gmail.com</span>
