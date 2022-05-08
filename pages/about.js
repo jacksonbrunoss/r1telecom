@@ -7,15 +7,10 @@ export default function About() {
     <article className={styled.AboutPage}>
       <div className={styled.BannerAboutImage}>
         <div className={styled.BannerAbout}>
-          <aside className={styled.BannerAboutBox}>
+          <div className={styled.BannerAboutBox}>
             <h3>Sua internet mais perto de você</h3>
             <p>Conexão para todas as horas e soluções para toda a família com segurança e qualidade.</p> 
-          </aside>
-          <aside className={styled.BannerAboutBox}>
-            <div className={styled.BannerImageBox}>
-              <Image src="/brandAbout.svg" width="400" height="282" alt="logo" /> 
-            </div>
-          </aside>
+          </div>
         </div>
       </div>
       <div className={styled.AboutInfo}>
@@ -46,9 +41,6 @@ export default function About() {
           <h4>Contrate nossos serviços</h4>
           <p>Venha aproveitar as melhores soluções para você se conectar com o mundo.</p>
           <Button info="Assine Agora" go="/planos" />
-        </div>
-        <div className={styled.ImgPlanos}>
-          <Image src="/boxabout.png" width="550" height="200" alt="imagem" />
         </div>
       </div>
     </article>

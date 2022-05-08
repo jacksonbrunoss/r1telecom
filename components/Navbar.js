@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
-import { BsFillTelephoneFill, BsInstagram } from "react-icons/bs";
+import { 
+  BsWhatsapp, 
+  BsInstagram, 
+  BsEnvelope, 
+  BsGeoAltFill 
+} from "react-icons/bs";
 
 
 import styled from '../styles/Navbar.module.css';
+
 
 export default function Navbar() {
 
@@ -26,18 +32,18 @@ export default function Navbar() {
           <div className={styled.SocialLinksInfo}>
             <ul>
               <li>
-              <BsFillTelephoneFill /><span>86 99999-9999</span>
+              <BsWhatsapp /><Link href="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..."><a>86 995095492</a></Link>
               </li>
               <li>
-                <BsInstagram /><span>@r1telecom</span>
+                <BsInstagram /><Link href="https://www.instagram.com/r1telecom/"><a>@r1telecom</a></Link>
               </li>
               <li>
-                <box-icon color="#fff" name='envelope'></box-icon><span>r1telecom@gmail.com</span>
+                <BsEnvelope /><span>r1telecom@gmail.com</span>
               </li>
             </ul>
           </div>
           <div className={styled.LocationInfo}>
-          <box-icon color="#fff" name='location-plus'></box-icon><span>Nome da rua, Bairro, 000, Cidade - PI</span>
+          <BsGeoAltFill /><span>Nome da rua, Bairro, 000, Cidade - PI</span>
           </div>
         </div>
       </div>
@@ -66,7 +72,7 @@ export default function Navbar() {
               <Link  href="/roof"><a>Cobertura</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
-              <Link  href="/plan"><a>Planos</a></Link>
+              <Link  href="/planos"><a>Planos</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
               <Link  href="/news"><a>Novidades</a></Link>
@@ -95,7 +101,7 @@ export default function Navbar() {
               <Link href="/roof"><a>Cobertura</a></Link>
             </li>
             <li>
-              <Link href="/plan"><a>Planos</a></Link>
+              <Link href="/planos"><a>Planos</a></Link>
             </li>
             <li>
               <Link href="/news"><a>Novidades</a></Link>

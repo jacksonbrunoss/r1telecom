@@ -1,0 +1,74 @@
+.PlanosPage {
+  width: 100%;
+}
+.PlanosPageHeader {
+  width: 100%;
+  background-image: url('../public/bgPlanos.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+
+  padding-top: 64px;
+}
+.PlanosPageContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+.PlanosPageTitle h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-color-l);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.PlanosPageTitle p {
+  color: var(--text-color-l);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 64px;
+  line-height: 24px;
+}
+.PlanosPageCards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.PlanosPageCard {
+  width: 100%;
+  border-radius: 5px;
+  padding: 64px 16px;
+  background: var(--text-color-l);
+  text-align: center;
+  margin-bottom: 64px;
+}
+.PlanosPageCard h4 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 16px 0px;
+  letter-spacing: 0.6rem;
+  font-weight: 500;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.PlanosPageCard strong {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--main-color);
+}
+.Icon svg {
+  width: 80px;
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .PlanosPageCards {
+    width: auto;
+    flex-direction: column;
+  }
+  .PlanosPageCard {
+    padding: 32px 0px;
+  }
+}

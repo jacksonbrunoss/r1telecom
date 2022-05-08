@@ -1,7 +1,10 @@
 import styled from "../styles/Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
-//import 'boxicons'
+import { 
+  BsWhatsapp, 
+  BsInstagram, 
+} from "react-icons/bs";
 
 export default function Footer() {
   return (
@@ -24,8 +27,8 @@ export default function Footer() {
               <p>Rua Nome da rua N° 000 Centro – Amarante - Pi, Brasil, 64400-000 <br /> contato@r1telecom.com.br</p>
               <h4>Nossa Redes</h4>
               <ul>
-                <li><Link href="/"><a><box-icon color="#fff" type='logo' name='whatsapp'></box-icon></a></Link></li>
-                <li><Link href="/"><a><box-icon color="#fff" className="pin" type='logo' name='instagram'></box-icon></a></Link></li>
+                <li><Link href="/"><a><BsWhatsapp /></a></Link></li>
+                <li><Link href="/"><a><BsInstagram /></a></Link></li>
               </ul>
             </article>
           </div>
@@ -33,7 +36,7 @@ export default function Footer() {
             <article className={styled.Anatel}>
               <h3>Autorizado por:</h3>
               <div className={styled.ImgAnatel}>
-                <Image src="/box.svg" width="110" height="110" alt="Logo" />
+                <Image src="/box.svg" width="150" height="150" alt="Logo" />
               </div>
             </article>
           </div>

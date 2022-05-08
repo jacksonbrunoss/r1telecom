@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   background-clip: border-box;
+  background-attachment: fixed;
 }
 .ClientesContainer {
   max-width: 1180px;
