@@ -2,7 +2,7 @@ import styled from '../styles/AboutPage.module.css';
 import Image from 'next/image';
 import Button from '../components/Button';
 
-export default function About() {
+export default function Sobre() {
   return (
     <article className={styled.AboutPage}>
       <div className={styled.BannerAboutImage}>

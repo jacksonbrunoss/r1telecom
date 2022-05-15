@@ -66,19 +66,19 @@ export default function Navbar() {
               <Link  href="/"><a>Home</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
-              <Link  href="/about"><a>Quem Somos</a></Link>
+              <Link  href="/sobre"><a>Quem Somos</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
-              <Link  href="/roof"><a>Cobertura</a></Link>
+              <Link  href="/cobertura"><a>Cobertura</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
               <Link  href="/planos"><a>Planos</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
-              <Link  href="/news"><a>Novidades</a></Link>
+              <Link  href="/novidades"><a>Novidades</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
-              <Link  href="/contact"><a>Contato</a></Link>
+              <Link  href="/contato"><a>Contato</a></Link>
             </li>
           </ul>
           <div className={styled.ButtonToggle}>
@@ -95,19 +95,19 @@ export default function Navbar() {
               <Link href="/"><a>Home</a></Link>
             </li>
             <li>
-              <Link href="/about"><a>Quem Somos</a></Link>
+              <Link href="/sobre"><a>Quem Somos</a></Link>
             </li>
             <li>
-              <Link href="/roof"><a>Cobertura</a></Link>
+              <Link href="/cobertura"><a>Cobertura</a></Link>
             </li>
             <li>
               <Link href="/planos"><a>Planos</a></Link>
             </li>
             <li>
-              <Link href="/news"><a>Novidades</a></Link>
+              <Link href="/novidades"><a>Novidades</a></Link>
             </li>
             <li>
-              <Link href="/contact"><a>Contato</a></Link>
+              <Link href="/contato"><a>Contato</a></Link>
             </li>
           </ul>
           <Button go="/404" info="2° via boleto" />

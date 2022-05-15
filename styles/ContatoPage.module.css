@@ -1,0 +1,80 @@
+.ContatoWrapper {
+  width: 100%;
+}
+.ContatoTitle {
+  width: 100%;
+  background-image: url("../public/bgContato.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 64px 0px;
+}
+.ContatoTitle h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-color-l);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.ContatoTitle p {
+  color: var(--text-color-l);
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+}
+.ContatoContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+.ContatoContainerBox {
+  padding: 64px 0px;
+  display: flex;
+  gap: 32px;
+}
+.ContatoInfoContato {
+  width: 25%;
+}
+.InfoContato h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.InfoContato p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+.InfoContato ul {
+  display: flex;
+  gap: 16px;
+}
+.InfoContato ul li a {
+  padding: 12px;
+  background: var(--gradient);
+  border-radius: 100px;
+}
+.InfoContato ul li a svg {
+  color: var(--text-color-l);
+  margin-top: 16px;
+}
+.ContatoForm {
+  width: 75%;
+}
+.FormContato {
+  width: 100%;
+  display: block;
+}
+.FormContato fieldset {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .ContatoContainerBox {
+    flex-direction: column-reverse;
+  }
+  .ContatoInfoContato {
+    width: 100%;
+  }
+  .ContatoForm {
+    width: 100%;
+  }
+}

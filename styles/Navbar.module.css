@@ -65,6 +65,7 @@
 .NavLinksMenu ul li a {
   padding: 5px 0px 5px 20px;
   color: #130CB7;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .NavLinksMenu ul li a:hover {
