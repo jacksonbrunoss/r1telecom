@@ -2,6 +2,74 @@ import styled from '../styles/Plan.module.css';
 
 import Button from './Button'
 
+const radio = [
+  {
+    megas: 30,
+    infos: [
+      "MEGA DE DOWNLOAD",
+      "MEGA DE UPLOAD",
+      "SUPORTE"
+    ],
+    preco: 100.00,
+  },
+  {
+    megas: 50,
+    infos: [
+      "MEGA DE DOWNLOAD",
+      "MEGA DE UPLOAD",
+      "SUPORTE"
+    ],
+    preco: 106.00,
+  }
+]
+
+const fibra = [
+  {
+    megas: 120,
+    infos: [
+      "MEGA DE DOWNLOAD",
+      "MEGA DE UPLOAD",
+      "WIFI ULTRA",
+      "FIBRA ÓPTICA",
+      "SUPORTE"
+    ],
+    preco: 100.00,
+  },
+  {
+    megas: 220,
+    infos: [
+      "MEGA DE DOWNLOAD",
+      "MEGA DE UPLOAD",
+      "WIFI ULTRA",
+      "FIBRA ÓPTICA",
+      "SUPORTE"
+    ],
+    preco: 106.00,
+  },
+  {
+    megas: 320,
+    infos: [
+      "MEGA DE DOWNLOAD",
+      "MEGA DE UPLOAD",
+      "WIFI ULTRA",
+      "FIBRA ÓPTICA",
+      "SUPORTE"
+    ],
+    preco: 115.00,
+  },
+  {
+    megas: 450,
+    infos: [
+      "MEGA DE DOWNLOAD",
+      "MEGA DE UPLOAD",
+      "WIFI ULTRA",
+      "FIBRA ÓPTICA",
+      "SUPORTE"
+    ],
+    preco: 125.00,
+  }
+]
+
 export default function Plan() {
   return (
     <div className={styled.PlanWrapper}>
@@ -12,64 +80,58 @@ export default function Plan() {
                 Alta performance para usar o wifi em seus dispositivos
               </p>  
         </div>
-        <div className={styled.PlanContent}>
-          <div className={styled.PlanCard}>
-            <div className={styled.PlanCardTitle}>
-              <h3>300 MEGAS</h3>
-            </div>
-            <div className={styled.PlanCardContent}>
-              <ul>
-                <li>300 Mega de Download</li>
-                <li>300 Mega de Upload</li>
-                <li>Wifi Ultra</li>
-                <li>Fibra Óptica</li>
-              </ul>
-              <p>R$ 90,00</p>
-            </div>
-            <div className={styled.PlanCardAction}>
-              <Button go="/" info="Assinar Agora" />
-            </div>
+        <div data-aos="zoom-out-up" className={styled.PlanContent}>
+            { fibra.map((dado) => 
+              <div className={styled.PlanCard}>
+                <div key={dado.id} className={styled.PlanCardTitle}>
+                  <h3>{dado.megas} MEGAS</h3>
+                </div>
+                <div className={styled.PlanCardContent}>
+                  <ul>
+                    <li>{dado.megas} {dado.infos[0]}</li>
+                    <li>{dado.megas} {dado.infos[1]}</li>
+                    <li>{dado.infos[2]}</li>
+                    <li>{dado.infos[3]}</li>
+                    <li>{dado.infos[4]}</li>
+                  </ul>
+                  <p>R$ {dado.preco},00</p>
+                </div>
+                <div className={styled.PlanCardAction}>
+                  <Button go="/" info="Assinar Agora" />
+                </div>
+              </div>
+              )
+            }
           </div>
-          <div className={styled.PlanCard}>
-            <div className={styled.PlanCardTitle}>
-              <h3>300 MEGAS</h3>
-            </div>
-            <div className={styled.PlanCardContent}>
-              <ul>
-                <li>300 Mega de Download</li>
-                <li>300 Mega de Upload</li>
-                <li>Wifi Ultra</li>
-                <li>Fibra Óptica</li>
-              </ul>
-              <p>R$ 90,00</p>
-            </div>
-            <div className={styled.PlanCardAction}>
-              <Button go="/" info="Assinar Agora" />
-            </div>
+          <div className={styled.PlanContent}>
+            { radio.map((dadoR) => 
+              <div className={styled.PlanCard}>
+                <div key={dadoR.id} className={styled.PlanCardTitle}>
+                  <h3>{dadoR.megas} MEGAS RADIO</h3>
+                </div>
+                <div className={styled.PlanCardContent}>
+                  <ul>
+                    <li>{dadoR.megas} {dadoR.infos[0]}</li>
+                    <li>{dadoR.megas} {dadoR.infos[1]}</li>
+                    <li>{dadoR.infos[2]}</li>
+                    <li>{dadoR.infos[3]}</li>
+                    <li>{dadoR.infos[4]}</li>
+                  </ul>
+                  <p>R$ {dadoR.preco},00</p>
+                </div>
+                <div className={styled.PlanCardAction}>
+                  <Button go="/" info="Assinar Agora" />
+                </div>
+              </div>
+              )
+            }
           </div>
-          <div className={styled.PlanCard}>
-            <div className={styled.PlanCardTitle}>
-              <h3>300 MEGAS</h3>
-            </div>
-            <div className={styled.PlanCardContent}>
-              <ul>
-                <li>300 Mega de Download</li>
-                <li>300 Mega de Upload</li>
-                <li>Wifi Ultra</li>
-                <li>Fibra Óptica</li>
-              </ul>
-              <p>R$ 90,00</p>
-            </div>
-            <div className={styled.PlanCardAction}>
-              <Button go="/" info="Assinar Agora" />
-            </div>
-          </div>
-        </div>
-        <div className={styled.PlanActions}>
+          <div className={styled.PlanActions}>
           <Button go="/" info="Central do cliente" />
           <Button go="https://fast.com/pt/" info="teste de velocidade" />
         </div>
+        </div>
+        
       </div>
-    </div>
   )
 }

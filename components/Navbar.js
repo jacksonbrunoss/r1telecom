@@ -38,7 +38,7 @@ export default function Navbar() {
                 <BsInstagram /><Link href="https://www.instagram.com/r1telecom/"><a>@r1telecom</a></Link>
               </li>
               <li>
-                <BsEnvelope /><span>r1telecom@gmail.com</span>
+                <BsEnvelope /><Link href="/"><a><span>r1telecom@gmail.com</span></a></Link>
               </li>
             </ul>
           </div>
@@ -69,9 +69,6 @@ export default function Navbar() {
               <Link  href="/sobre"><a>Quem Somos</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
-              <Link  href="/cobertura"><a>Cobertura</a></Link>
-            </li>
-            <li onClick={handleMenuToggle}>
               <Link  href="/planos"><a>Planos</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
@@ -96,9 +93,6 @@ export default function Navbar() {
             </li>
             <li>
               <Link href="/sobre"><a>Quem Somos</a></Link>
-            </li>
-            <li>
-              <Link href="/cobertura"><a>Cobertura</a></Link>
             </li>
             <li>
               <Link href="/planos"><a>Planos</a></Link>

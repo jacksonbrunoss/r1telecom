@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "boxicons": "^2.1.2",
     "dotenv": "^16.0.1",
     "emailjs-com": "^3.2.0",

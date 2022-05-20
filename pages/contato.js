@@ -3,7 +3,6 @@ import emailjs from 'emailjs-com';
 import { BsWhatsapp, BsFacebook, BsInstagram } from "react-icons/bs";
 import Input from '../components/Input';
 import Textarea from "../components/Textarea";
-import Button from '../components/Button';
 import Link from 'next/link';
 
 import styled from '../styles/ContatoPage.module.css';
@@ -11,7 +10,7 @@ import styled from '../styles/ContatoPage.module.css';
 
 export default function Contato() {
   function sendEmail() {
-    
+    alert("Funcionando.")
   }
   return (
     <section className={styled.ContatoWrapper}>
@@ -60,8 +59,7 @@ export default function Contato() {
                   type="text"
                   desc="Messagem"  
                 />
-                <input type="submit" value="Send" />
-                <Button info="Enviar" go="/"/>
+                <input className={styled.BtnForm} type="submit" value="Enviar Menssagem" />
               </fieldset>
             </form>
           </div>
