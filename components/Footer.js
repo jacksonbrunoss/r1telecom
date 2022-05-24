@@ -27,8 +27,8 @@ export default function Footer() {
               <p>Rua Nome da rua N° 000 Centro – Amarante - Pi, Brasil, 64400-000 <br /> contato@r1telecom.com.br</p>
               <h4>Nossa Redes</h4>
               <ul>
-                <li><Link href="/"><a><BsWhatsapp /></a></Link></li>
-                <li><Link href="/"><a><BsInstagram /></a></Link></li>
+                <li><Link href="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..."><a><BsWhatsapp /></a></Link></li>
+                <li><Link href="https://www.instagram.com/r1telecom/"><a><BsInstagram /></a></Link></li>
               </ul>
             </article>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
         
       </div>
       <div className={styled.Copy}>
-         2022 R1 Telecom &copy; - Todos os Direitos Reservados. Desenvolvimento | Jackson Bruno
+         2022 R1 Telecom &copy; - Todos os Direitos Reservados. Desenvolvimento | <Link href="https://youthful-snyder-38a835.netlify.app/"><a>Jackson Bruno</a></Link>
         </div>
     </footer>
   )

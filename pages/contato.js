@@ -30,9 +30,9 @@ export default function Contato() {
               <p>0800 083 1155</p>
               <h3>Redes Sociais</h3>
               <ul>
-                <li><Link href="/"><a><BsWhatsapp /></a></Link></li>
-                <li><Link href="/"><a><BsFacebook /></a></Link></li>
-                <li><Link href="/"><a><BsInstagram /></a></Link></li>
+                <li><Link href="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..."><a><BsWhatsapp /></a></Link></li>
+                <li><Link href="https://www.facebook.com/r1telecompi"><a><BsFacebook /></a></Link></li>
+                <li><Link href="https://www.instagram.com/r1telecom/"><a><BsInstagram /></a></Link></li>
               </ul>
             </div>
           </div>

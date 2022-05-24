@@ -71,6 +71,9 @@
   margin-top: 32px;
   padding: 30px 0px;
 }
+.Copy a {
+  color: var(--text-color-l);
+}
 
 @media (max-width: 768px) {
   .CaseFooter {

@@ -1,4 +1,3 @@
-
 import styled from '../styles/Hero.module.css'
 
 import Button from './Button';
@@ -15,7 +14,7 @@ export default function Hero() {
           <p>
             Velocidade é tudo, seja nosso cliente e aproveite a melhor internet banda larga do medio parnaiba.
           </p>
-          <Button go="/" info="Assine Agora" />
+          <Button go="/assinatura" info="Assine Agora" />
         </div>
         <div className={styled.ImgHero}>
           <Image src="/imghero.svg" width="400" height="400" alt="" />

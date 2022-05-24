@@ -1,0 +1,88 @@
+.WrapperBoleto {
+  width: 100%;
+}
+.TitleBoleto { 
+  width: 100%;
+  height: auto;
+  padding: 64px 0px;
+  background-image: url("../public/bgPlanos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
+}
+.TitleBoleto h1 {
+  text-align: center;
+  color: var(--text-color-l);
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.TitleBoleto span {
+  color: var(--text-color-l);
+  line-height: 24px;
+  font-weight: lighter;
+}
+.TitleBoleto span a {
+  color: var(--text-color-l);
+  line-height: 24px;
+  font-weight: lighter;
+}
+.ContainerBoleto {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 64px 16px 64px 16px;
+}
+.ContentBoleto {
+  width: 100%;
+}
+.ContentBoleto h2 {
+  text-align: center;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+.BoxForm {
+  width: 100%;
+  display: block;
+}
+.FormBoleto { width: 100%; display: block;}
+.FormBoleto fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.SelectFormLabel {
+  font-size: 1.0rem;
+  font-weight: 800;
+  padding-bottom: 16px;
+}
+.SelectForm {
+  max-width: 100%;
+  padding: 16px 8px;
+  font-size: 1.0rem;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  margin-bottom: 32px;
+  background: transparent;
+}
+
+.SelectForm:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.BtnForm {
+  display: inline-block;
+  width: 250px;
+  padding: 15px 35px;
+  background: var(--gradient);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+}

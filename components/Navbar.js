@@ -81,7 +81,7 @@ export default function Navbar() {
           <div className={styled.ButtonToggle}>
             <Button 
               color="#ffffff" 
-              go="/404" 
+              go="/boleto" 
               info="2° via boleto" 
             /> 
           </div>
@@ -104,7 +104,7 @@ export default function Navbar() {
               <Link href="/contato"><a>Contato</a></Link>
             </li>
           </ul>
-          <Button go="/404" info="2° via boleto" />
+          <Button go="/boleto" info="2° via boleto" />
         </div>
       </nav>
     </header>

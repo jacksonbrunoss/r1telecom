@@ -97,7 +97,7 @@ export default function Plan() {
                   <p>R$ {dado.preco},00</p>
                 </div>
                 <div className={styled.PlanCardAction}>
-                  <Button go="/" info="Assinar Agora" />
+                  <Button go="/assinatura" info="Assinar Agora" />
                 </div>
               </div>
               )
@@ -120,14 +120,14 @@ export default function Plan() {
                   <p>R$ {dadoR.preco},00</p>
                 </div>
                 <div className={styled.PlanCardAction}>
-                  <Button go="/" info="Assinar Agora" />
+                  <Button go="/assinatura" info="Assinar Agora" />
                 </div>
               </div>
               )
             }
           </div>
           <div className={styled.PlanActions}>
-          <Button go="/" info="Central do cliente" />
+          <Button go="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..." info="Central do cliente" />
           <Button go="https://fast.com/pt/" info="teste de velocidade" />
         </div>
         </div>
