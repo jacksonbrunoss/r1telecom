@@ -43,6 +43,7 @@
   background-color: var(--text-color-l);
   border-radius: 5px;
   padding: 0px 32px 64px 32px;
+  width: 33%;
 }
 .ClientesCardAvatar {
   width: 100px;
@@ -53,6 +54,9 @@
   top: -50px;
   margin: 0 auto;
   position: relative;
+}
+.ClientesCardAvatar img {
+  border-radius: 100px;
 }
 .ClientesCardName p {
   font-size: 1.1rem;
@@ -72,5 +76,8 @@
 @media (max-width: 768px) {
   .ClientesContent {
     flex-direction: column;
+  }
+  .ClientesCard {
+    width: auto;
   }
 }

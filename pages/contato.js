@@ -23,11 +23,11 @@ export default function Contato() {
           <div className={styled.ContatoInfoContato}>
             <div className={styled.InfoContato}>
               <h3>Contate por outros canais</h3>
-              <p>Rua Nome da rua N° 000 Centro – Amarante - Pi, Brasil, 64400-000</p>
+              <p>Rua São Benedito, Centro, n° 92, Amarante - Piauí, Brasil, 64400-000</p>
               <h3>E-mail</h3>
-              <p>falecom@r1telecom.net</p>
+              <p>r1telecom21@gmail.com</p>
               <h3>Telefone</h3>
-              <p>0800 083 1155</p>
+              <p>86 9546-2851</p>
               <h3>Redes Sociais</h3>
               <ul>
                 <li><Link href="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..."><a><BsWhatsapp /></a></Link></li>

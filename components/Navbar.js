@@ -38,12 +38,12 @@ export default function Navbar() {
                 <BsInstagram /><Link href="https://www.instagram.com/r1telecom/"><a>@r1telecom</a></Link>
               </li>
               <li>
-                <BsEnvelope /><Link href="/"><a><span>r1telecom@gmail.com</span></a></Link>
+                <BsEnvelope /><Link href="mailto:r1telecom21@gmail.com"><a><span>r1telecom21@gmail.com</span></a></Link>
               </li>
             </ul>
           </div>
           <div className={styled.LocationInfo}>
-          <BsGeoAltFill /><span>Nome da rua, Bairro, 000, Cidade - PI</span>
+          <BsGeoAltFill /><span>Rua São Benedito, Centro, n° 92, Amarante - Piauí</span>
           </div>
         </div>
       </div>
@@ -72,16 +72,13 @@ export default function Navbar() {
               <Link  href="/planos"><a>Planos</a></Link>
             </li>
             <li onClick={handleMenuToggle}>
-              <Link  href="/novidades"><a>Novidades</a></Link>
-            </li>
-            <li onClick={handleMenuToggle}>
               <Link  href="/contato"><a>Contato</a></Link>
             </li>
           </ul>
           <div className={styled.ButtonToggle}>
             <Button 
               color="#ffffff" 
-              go="/boleto" 
+              go="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%202%C2%B0%20via%20do%20boleto%20%E2%98%BA%EF%B8%8F" 
               info="2° via boleto" 
             /> 
           </div>
@@ -98,13 +95,10 @@ export default function Navbar() {
               <Link href="/planos"><a>Planos</a></Link>
             </li>
             <li>
-              <Link href="/novidades"><a>Novidades</a></Link>
-            </li>
-            <li>
               <Link href="/contato"><a>Contato</a></Link>
             </li>
           </ul>
-          <Button go="/boleto" info="2° via boleto" />
+          <Button go="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%202%C2%B0%20via%20do%20boleto%20%E2%98%BA%EF%B8%8F" info="2° via boleto" />
         </div>
       </nav>
     </header>

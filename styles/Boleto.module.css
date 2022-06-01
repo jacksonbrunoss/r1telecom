@@ -86,3 +86,26 @@
   font-weight: 600;
   border: none;
 }
+.BoxInputBoleto {
+  max-width: 100%;
+  display: block;
+}
+.FormLabel {
+  font-size: 1.0rem;
+  font-weight: 800;
+  padding-bottom: 16px;
+}
+.FormInput {
+  display: block;
+  padding: 16px 8px;
+  font-size: 1.0rem;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  background: transparent;
+}
+.FormInput:focus, .FormTextarea:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}

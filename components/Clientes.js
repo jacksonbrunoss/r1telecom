@@ -13,16 +13,16 @@ export default function Clientes() {
         <div className={styled.ClientesContent}>
           <div className={styled.ClientesCard}>
             <div className={styled.ClientesCardAvatar}>
-              <Image src="/avatarclient.png" width="100"  height="100" alt="sds" />
+              <Image src="/c2.jpg" width="100"  height="100" alt="Marta Rocha" />
             </div> 
             <div className={styled.ClientesCardName}>
-              <p>Jackson Bruno</p>
+              <p>Martha Rocha</p>
             </div>
             <div className={styled.ClientesCardIcon}>
               <Image src="/cite.svg" width="50"  height="50" alt="" />
             </div>
             <div className={styled.ClientesCardComent}>
-              <p>O melhor provedor de internet que já contratei, até hoje nunca tive problemas.</p>
+              <p>"Sou cliente da R1 Telecom e não tenho intenção de mudar. É o melhor provedor em todos os quesitos, da estabilidade e velocidade da internet ao atendimento e suporte oferecido."</p>
             </div>
           </div>
           <div className={styled.ClientesCard}>
@@ -41,10 +41,10 @@ export default function Clientes() {
           </div>
           <div className={styled.ClientesCard}>
             <div className={styled.ClientesCardAvatar}>
-              <Image src="/avatarclient.png" width="100"  height="100" alt="sds" />
+              <Image src="/c3.jpg" width="100"  height="100" alt="sds" />
             </div> 
             <div className={styled.ClientesCardName}>
-              <p>Jackson Bruno</p>
+              <p>João Vitor</p>
             </div>
             <div className={styled.ClientesCardIcon}>
               <Image src="/cite.svg" width="50"  height="50" alt="" />

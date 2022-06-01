@@ -24,7 +24,7 @@ export default function Footer() {
           <div className={styled.Box}>
             <article className={styled.MiniContato}>
               <h3>Contato</h3>
-              <p>Rua Nome da rua N° 000 Centro – Amarante - Pi, Brasil, 64400-000 <br /> contato@r1telecom.com.br</p>
+              <p>Rua São Benedito, Centro, n° 92, Amarante - Piauí, Brasil, 64400-000 <br /> r1telecom21@gmail.com</p>
               <h4>Nossa Redes</h4>
               <ul>
                 <li><Link href="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..."><a><BsWhatsapp /></a></Link></li>

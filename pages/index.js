@@ -19,7 +19,6 @@ export default function Home() {
       <div className={styled.Line}></div>
       <Plan />
       <BoxRural />
-      <BlogHome />
       <Clientes />
       <div className={styled.Content}>
         <h3>Você ainda tem dúvidas? Vamos te ajudar</h3>
