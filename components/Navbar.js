@@ -49,7 +49,7 @@ export default function Navbar() {
       </div>
       <nav className={styled.NavLinks}>
         <div>
-          <Image src="/brand.svg" width="75" height="75" />
+          <Image src="/brand.svg" width="75" height="75" alt="logo" />
         </div>
         <div 
         className={styled.MenuTogge} 

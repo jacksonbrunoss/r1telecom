@@ -2,6 +2,8 @@ import styled from '../styles/AboutPage.module.css';
 import Image from 'next/image';
 import Button from '../components/Button';
 
+const link = "https://api.whatsapp.com/send?phone=558695095492&text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20um%20novo%20plano%20com%20a%20R1%20Telecom%20%F0%9F%A4%A9"
+
 export default function Sobre() {
   return (
     <article className={styled.AboutPage}>
@@ -40,7 +42,7 @@ export default function Sobre() {
         <div className={styled.AboutPlanosBox}>
           <h4>Contrate nossos serviços</h4>
           <p>Venha aproveitar as melhores soluções para você se conectar com o mundo.</p>
-          <Button info="Assine Agora" go="/planos" />
+          <Button info="Assine Agora" go={link} />
         </div>
       </div>
     </article>

@@ -38,7 +38,7 @@ export default function Assinatura() {
                 <Input desc="Endereço/Comunidade" type="text" name="endereco" />
                 <Input desc="Bairro" type="text" name="bairro" />
                 <Input desc="Cidade" type="text" name="estado" />
-                <label htmlfor="cars" className={styled.SelectFormLabel}>Escolha seu plano:</label>
+                <label htmlFor="cars" className={styled.SelectFormLabel}>Escolha seu plano:</label>
                 <select name="plans" id="cars" className={styled.SelectForm}>
                   <option value="120mb">120 MEGAS - R$ 100,00</option>
                   <option value="220mb">220 MEGAS - R$ 106,00</option>

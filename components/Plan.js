@@ -4,6 +4,7 @@ import Button from './Button'
 
 const radio = [
   {
+    id: 1,
     megas: 30,
     infos: [
       "MEGA DE DOWNLOAD",
@@ -13,6 +14,7 @@ const radio = [
     preco: 100.00,
   },
   {
+    id: 2,
     megas: 50,
     infos: [
       "MEGA DE DOWNLOAD",
@@ -25,6 +27,7 @@ const radio = [
 
 const fibra = [
   {
+    id: 1,
     megas: 120,
     infos: [
       "MEGA DE DOWNLOAD",
@@ -36,6 +39,7 @@ const fibra = [
     preco: 100.00,
   },
   {
+    id: 2,
     megas: 220,
     infos: [
       "MEGA DE DOWNLOAD",
@@ -47,6 +51,7 @@ const fibra = [
     preco: 106.00,
   },
   {
+    id: 3,
     megas: 320,
     infos: [
       "MEGA DE DOWNLOAD",
@@ -58,6 +63,7 @@ const fibra = [
     preco: 115.00,
   },
   {
+    id: 4,
     megas: 450,
     infos: [
       "MEGA DE DOWNLOAD",
@@ -70,6 +76,7 @@ const fibra = [
   }
 ]
 
+const link = "https://api.whatsapp.com/send?phone=558695095492&text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20um%20novo%20plano%20com%20a%20R1%20Telecom%20%F0%9F%A4%A9"
 export default function Plan() {
   return (
     <div className={styled.PlanWrapper}>
@@ -82,8 +89,8 @@ export default function Plan() {
         </div>
         <div data-aos="zoom-out-up" className={styled.PlanContent}>
             { fibra.map((dado) => 
-              <div className={styled.PlanCard}>
-                <div key={dado.id} className={styled.PlanCardTitle}>
+              <div key={dado.id} className={styled.PlanCard}>
+                <div  className={styled.PlanCardTitle}>
                   <h3>{dado.megas} MEGAS</h3>
                 </div>
                 <div className={styled.PlanCardContent}>
@@ -97,7 +104,7 @@ export default function Plan() {
                   <p>R$ {dado.preco},00</p>
                 </div>
                 <div className={styled.PlanCardAction}>
-                  <Button go="/assinatura" info="Assinar Agora" />
+                  <Button go={link} info="Assinar Agora" />
                 </div>
               </div>
               )
@@ -105,8 +112,8 @@ export default function Plan() {
           </div>
           <div className={styled.PlanContent}>
             { radio.map((dadoR) => 
-              <div className={styled.PlanCard}>
-                <div key={dadoR.id} className={styled.PlanCardTitle}>
+              <div key={dadoR.id} className={styled.PlanCard}>
+                <div  className={styled.PlanCardTitle}>
                   <h3>{dadoR.megas} MEGAS RADIO</h3>
                 </div>
                 <div className={styled.PlanCardContent}>
@@ -120,14 +127,14 @@ export default function Plan() {
                   <p>R$ {dadoR.preco},00</p>
                 </div>
                 <div className={styled.PlanCardAction}>
-                  <Button go="/assinatura" info="Assinar Agora" />
+                  <Button go={link} info="Assinar Agora" />
                 </div>
               </div>
               )
             }
           </div>
           <div className={styled.PlanActions}>
-          <Button go="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..." info="Central do cliente" />
+          <Button go={link} info="Central do cliente" />
           <Button go="https://fast.com/pt/" info="teste de velocidade" />
         </div>
         </div>

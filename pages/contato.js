@@ -8,9 +8,27 @@ import Link from 'next/link';
 import styled from '../styles/ContatoPage.module.css';
 
 
+const link = "https://api.whatsapp.com/send?phone=558695095492&text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20um%20novo%20plano%20com%20a%20R1%20Telecom%20%F0%9F%A4%A9"
+
 export default function Contato() {
-  function sendEmail() {
-    alert("Funcionando.")
+  const userID = process.env.REACT_APP_USER_ID;
+  const templateID = process.env.REACT_APP_TEMPLATE_ID;
+  const serviceID = process.env.REACT_APP_SERVICE_ID;
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+	emailjs.sendForm(
+    serviceID,
+    templateID,
+    e.target,
+    userID
+	)
+	.then((result) => {
+	    console.log(result.text);
+	  }, (error) => {
+	console.log(error.text);
+    });
   }
   return (
     <section className={styled.ContatoWrapper}>
@@ -30,7 +48,7 @@ export default function Contato() {
               <p>86 9546-2851</p>
               <h3>Redes Sociais</h3>
               <ul>
-                <li><Link href="https://api.whatsapp.com/send?phone=5586995095492&text=Ol%C3%A1!%20Eu%20estava%20no%20site%20e%20tenho%20uma%20d%C3%BAvida..."><a><BsWhatsapp /></a></Link></li>
+                <li><Link href={link}><a><BsWhatsapp /></a></Link></li>
                 <li><Link href="https://www.facebook.com/r1telecompi"><a><BsFacebook /></a></Link></li>
                 <li><Link href="https://www.instagram.com/r1telecom/"><a><BsInstagram /></a></Link></li>
               </ul>
@@ -40,22 +58,22 @@ export default function Contato() {
             <form onSubmit={sendEmail} className={styled.FormContato}>
               <fieldset>
                 <Input 
-                  name="nome" 
+                  name="user_name" 
                   type="text" 
                   desc="Nome"
                 />
                 <Input 
-                  name="email" 
+                  name="user_email" 
                   type="mail" 
                   desc="E-mail"
                 />
                 <Input 
-                  name="assunto" 
+                  name="user_assunto" 
                   type="text" 
                   desc="Assunto"
                 />
                 <Textarea 
-                  name="messagem"
+                  name="user_msg"
                   type="text"
                   desc="Messagem"  
                 />
