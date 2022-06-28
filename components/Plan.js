@@ -21,7 +21,7 @@ const radio = [
       "MEGA DE UPLOAD",
       "SUPORTE"
     ],
-    preco: 106.00,
+    preco: 115.00,
   }
 ]
 
@@ -91,7 +91,7 @@ export default function Plan() {
             { fibra.map((dado) => 
               <div key={dado.id} className={styled.PlanCard}>
                 <div  className={styled.PlanCardTitle}>
-                  <h3>{dado.megas} MEGAS</h3>
+                  <h3>{dado.megas} MEGAS <br /> 100% FIBRA</h3>
                 </div>
                 <div className={styled.PlanCardContent}>
                   <ul>

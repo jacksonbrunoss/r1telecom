@@ -1,5 +1,8 @@
 .HeroWrapper {
   width: 100%;
+  background-image: url("../public/bg-hero.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .HeroContainer {
   max-width: 1180px;
@@ -12,7 +15,7 @@
 }
 .HeroInfo h1 {
   font-size: 3.3rem;
-  background: var(--gradient);
+  background: var(--text-color-l);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: 620px;
@@ -21,7 +24,7 @@
 }
 .HeroInfo p {
   font-size: 1rem;
-  color: var(--text-color);
+  color: var(--text-color-l);
   max-width: 520px;
   line-height: 24px;
   margin-bottom: 32px;

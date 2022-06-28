@@ -11,15 +11,15 @@ export default function Hero() {
       <div className={styled.HeroContainer}>
         <div className={styled.HeroInfo}>
           <h1>
-            O mundo mais perto, rápido e conectado com você
+          O melhor provedor de internet focado na zona rural do médio Parnaíba.
           </h1>
           <p>
-            Velocidade é tudo, seja nosso cliente e aproveite a melhor internet banda larga do medio parnaiba.
+            Velocidade é tudo, seja nosso cliente e aproveite a melhor internet banda larga do médio Parnaíba.
           </p>
           <Button go={link} info="Assine Agora" />
         </div>
         <div className={styled.ImgHero}>
-          <Image src="/imghero.svg" width="400" height="400" alt="" />
+          <Image src="/Brand-hero.png" width="300" height="250" alt="" />
         </div>
       </div> 
     </div>
