@@ -24,6 +24,31 @@
   padding-top: 8px;
   font-weight: 300;
 }
+.TabMaranhao {
+  display: flex;
+  justify-content: center;
+}
+.PlanTab {
+  width: 100%;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.PlanTab div {
+  width: 380px;
+  padding: 15px 35px;
+  background: var(--main-color);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+.PlanTab div:hover {
+  background: var(--gradient);
+}
 .PlanContent {
   width: 100%;
   display: flex;
@@ -82,6 +107,15 @@
 }
 
 @media (max-width: 768px) {
+  .TabMaranhao {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .PlanTab {
+    flex-direction: column;
+    align-items: center;
+  }
   .PlanContent {
     flex-direction: column;
   }
