@@ -27,6 +27,7 @@
 .TabMaranhao {
   display: flex;
   justify-content: center;
+  padding: 64px 0px;
 }
 .PlanTab {
   width: 100%;
@@ -104,6 +105,9 @@
 }
 .PlanActions a {
   margin: 0px 10px;
+}
+.noOne {
+  display: none;
 }
 
 @media (max-width: 768px) {

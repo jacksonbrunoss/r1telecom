@@ -121,7 +121,22 @@ const fibra = [
 const link = "https://api.whatsapp.com/send?phone=558695095492&text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20um%20novo%20plano%20com%20a%20R1%20Telecom%20%F0%9F%A4%A9"
 export default function Plan() {
 
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState(null);
+  console.log(activeTab);
+
+  const [opOne, setOpOne] = useState(null);
+  const [opTwo, setOpTwo] = useState(null);
+
+  const onClickOne = () => {
+    setOpOne(true);
+    setOpTwo(false);
+    console.log(opOne, opTwo);
+  };
+  const onClickTwo = () => {
+    setOpTwo(true);
+    setOpOne(false);
+    console.log(opOne, opTwo);
+  };
   
   
   return (
@@ -134,12 +149,12 @@ export default function Plan() {
               </p>  
         </div>
           <div className={styled.PlanTab}>
-            <div onClick={() => setActiveTab("tab1")} className={activeTab === "tab1" ? "active" : ""}>Piauí</div>
-            <div onClick={() => setActiveTab("tab2")} className={activeTab === "tab2" ? "active" : ""}>Maranhão</div>
+            <div onClick={onClickOne}>Piauí</div>
+            <div onClick={onClickTwo}>Maranhão</div>
           </div>
           <div className="outlet">
-          {activeTab === "tab1" ? <div>
-          <div data-aos="zoom-out-up" className={styled.PlanContent}>
+          {opOne === true ? <div>
+          <div className={(opOne ? styled.PlanContent : styled.noOne)}>
         
         { fibra.map((dado) => 
           <div key={dado.id} className={styled.PlanCard}>
@@ -186,7 +201,7 @@ export default function Plan() {
           )
         }
       </div>
-          </div> : <div className={styled.TabMaranhao}>
+          </div> : <div className={(opTwo ? styled.TabMaranhao : styled.noOne)}>
           { maranhao.map((dadoM) => 
           <div key={dadoM.id} className={styled.PlanCard}>
             <div  className={styled.PlanCardTitle}>
